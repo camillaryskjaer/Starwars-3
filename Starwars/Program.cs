@@ -131,10 +131,92 @@ namespace Starwars
             #endregion
             #region Assignment 10
 
+            //var assignment10 = from planet in planets
+
+            //                   orderby (4 * Math.PI * Math.Pow(planet.Diameter, 2) / planet.Population) ascending
+
+            //                   select planet;
+            //foreach (var assignment in assignment10)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 11
+
+            //        IEnumerable<Planet> periodPlanets =
+            //from planet in planets
+            //where planet.RotationPeriod > 0 
+            //select planet;
+
+            //        var onlyZeroPlanets = planets.Except(periodPlanets);
+            //        var assignment11 = from planet in onlyZeroPlanets
+            //                           select planet;
+            //        foreach (var assignment in assignment11)
+            //        {
+            //            Console.WriteLine(assignment.Name);
+            //        }
+
+            #endregion
+            #region Assignment 12
+            //            IEnumerable<Planet> aPlanets =
+            // from planet in planets
+            // where planet.Name.ToLower().StartsWith("a") || planet.Name.ToLower().EndsWith("s")
+            // select planet;
+
+
+
+            //            IEnumerable<Planet> nullPlanets =
+            //from planet in planets
+            //where planet.Terrain == null
+            //select planet;
+
+            //            var noneNULLPlanetes12 = planets.Except(nullPlanets);
+            //            var assignment12 = from planet in noneNULLPlanetes12
+            //                               where planet.Terrain.Contains("rainforest")
+            //                               select planet;
+
+            //            foreach (var assignment in aPlanets)
+            //            {
+            //                Console.WriteLine(assignment.Name);
+            //            }
+            //            foreach (var assignment in assignment12)
+            //            {
+            //                Console.WriteLine(assignment.Name);
+            //            }
+            #endregion
+            #region Assignment 13
+            //           IEnumerable<Planet> nullPlanets2 =
+            //from planet in planets
+            //where planet.Terrain == null
+            //select planet;
+            //           var noneNULLPlanets13 = planets.Except(nullPlanets2);
+            //           var assignment13L = noneNULLPlanets13.Where(p => p.Terrain.Contains("deserts"));
+            //           foreach (var assignment in assignment13L)
+            //           {
+            //               Console.WriteLine(assignment.Name);
+            //           }
+
+            #endregion
+            #region Assignment 14
+                    IEnumerable<Planet> nullPlanets3 =
+         from planet in planets
+         where planet.Terrain == null
+         select planet;
+
+            var noneNULLPlanets14 = planets.Except(nullPlanets3);
+            var assignment14L = noneNULLPlanets14.OrderBy(p => p.RotationPeriod).ThenBy(p => p.Name)
+                .Where(p => p.Terrain.Contains("swamp"));
+
+            foreach (var assignment in assignment14L)
+            {
+                Console.WriteLine(assignment.Name);
+            }
+
+
             #endregion
             Console.ReadKey();
         }
-     
+ 
 
         
 
