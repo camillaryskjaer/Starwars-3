@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,130 @@ namespace Starwars
         static void Main(string[] args)
         {
             List<Planet> planets = LoadData();
+
+            #region Assignment 1
+            ////Assignment 1 Query
+            //var assignnment1 = from planet in planets
+            //                   where planet.Name.ToLower().StartsWith("m")
+            //                   select planet;
+            ////Assignment 1 Lamdba
+            //var assignnment1L = planets.Where(p => p.Name.ToLower().StartsWith("m"));
+            //foreach ( var assignment in assignnment1L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+
+            #region Assignment 2
+            ////Assignment 2 Query
+            //var assignment2 = from planet in planets
+            //                  where planet.Name.ToLower().Contains("y")
+            //                  select planet;
+            //var assignment2L = planets.Where(p => p.Name.Contains("y"));
+            //foreach (var assignment in assignment2L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 3
+            //int _min = 9;
+            //int _max = 15;
+            //var assignment3 = from planet in planets
+            //                  where planet.Name.Length < _max && planet.Name.Length > _min
+            //                  select planet;
+            //var assignment3L = planets.Where(p => p.Name.Length < _max && p.Name.Length > _min);
+            //foreach (var assignment in assignment3L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 4
+            //var assignment4 = from planet in planets
+            //                  where planet.Name.ToLower()[1] == 'a' && planet.Name.EndsWith("e")
+            //                  select planet;
+            //var assignment4L = planets.Where(p => p.Name.ToLower()[1] == 'a' && p.Name.EndsWith("e"));
+            //foreach (var assignment in assignment4L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 5
+            //var assignment5 = from planet in planets
+            //                  orderby planet.RotationPeriod ascending
+            //                  where planet.RotationPeriod > 40
+            //                  select planet;
+            //var assignment5L = planets.OrderBy(o => o.RotationPeriod).Where(p => p.RotationPeriod > 40);
+            //foreach (var assignment in assignment5)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 6
+            //var assignment6 = from planet in planets
+            //                  orderby planet.Name ascending
+            //                  where planet.RotationPeriod > 10 && planet.RotationPeriod < 20
+            //                  select planet;
+            //var assignment6L = planets.OrderBy(o => o.Name).Where(p => p.RotationPeriod > 10)
+            //                                               .Where(a => a.RotationPeriod < 20);
+            //foreach (var assignment in assignment6L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 7
+            //var assignment7 = from planet in planets
+            //                  orderby planet.Name ascending
+            //                  orderby planet.RotationPeriod ascending
+            //                  where planet.RotationPeriod > 30
+            //                  select planet;
+            //var assignment7L = planets.OrderBy(o => o.Name).ThenBy(r => r.RotationPeriod)
+            //                          .Where(p => p.RotationPeriod > 30);
+
+            //foreach (var assignment in assignment7L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 8
+            ////Mangler r;kkef'lge og lamdba
+            //var assignment8 = from planet in planets
+            //                  orderby planet.Name ascending
+            //                  orderby planet.SurfaceWater 
+            //                  orderby planet.RotationPeriod
+            //                  where (planet.Name.ToLower().Contains("ba"))
+            //                  where (planet.RotationPeriod < 30 || planet.SurfaceWater > 50 )
+            //                  select planet;
+            //var assignment8L = planets.OrderBy(o => o.Name).ThenBy(r => r.SurfaceWater).ThenBy(p => p.RotationPeriod)
+            //                          .Where(p => p.Name.ToLower().Contains("ba"))
+            //                          .Where( p => p.RotationPeriod < 30 || p.SurfaceWater > 50);
+
+            //foreach (var assignment in assignment8L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 9
+            //var assignment9 = from planet in planets
+            //                  orderby planet.SurfaceWater descending
+            //                  where (planet.SurfaceWater > 0)
+            //                  select planet;
+            //var assignment9L = planets.OrderByDescending(o => o.SurfaceWater)
+            //                          .Where(p => p.SurfaceWater > 0);
+
+
+            //foreach (var assignment in assignment9L)
+            //{
+            //    Console.WriteLine(assignment.Name);
+            //}
+            #endregion
+            #region Assignment 10
+
+            #endregion
             Console.ReadKey();
         }
+     
 
-
+        
 
         static List<Planet> LoadData()
         {

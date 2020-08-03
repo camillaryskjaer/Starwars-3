@@ -5,3 +5,10 @@ c:\users\camr\documents\visual studio 2017\Projects\Starwars\Starwars\obj\Debug\
 c:\users\camr\documents\visual studio 2017\Projects\Starwars\Starwars\obj\Debug\Starwars.csproj.CoreCompileInputs.cache
 c:\users\camr\documents\visual studio 2017\Projects\Starwars\Starwars\obj\Debug\Starwars.exe
 c:\users\camr\documents\visual studio 2017\Projects\Starwars\Starwars\obj\Debug\Starwars.pdb
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\bin\Debug\Starwars.exe.config
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\bin\Debug\Starwars.exe
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\bin\Debug\Starwars.pdb
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\obj\Debug\Starwars.csprojAssemblyReference.cache
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\obj\Debug\Starwars.csproj.CoreCompileInputs.cache
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\obj\Debug\Starwars.exe
+C:\Users\asdf\Documents\GitHub\Starwars\Starwars\obj\Debug\Starwars.pdb
