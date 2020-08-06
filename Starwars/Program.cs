@@ -14,6 +14,7 @@ namespace Starwars
         {
             List<Planet> planets = LoadData();
 
+            //Fedt at du prøver med begge query typer
             #region Assignment 1
             ////Assignment 1 Query
             //var assignnment1 = from planet in planets
@@ -32,6 +33,8 @@ namespace Starwars
             //var assignment2 = from planet in planets
             //                  where planet.Name.ToLower().Contains("y")
             //                  select planet;
+                
+                //Her mangler du vist ToLower....
             //var assignment2L = planets.Where(p => p.Name.Contains("y"));
             //foreach (var assignment in assignment2L)
             //{
@@ -72,6 +75,14 @@ namespace Starwars
             //}
             #endregion
             #region Assignment 6
+                
+            //Det er bedst at indkapsle sine udtryk i paranteser
+                
+            var assignment6 = from planet in planets
+                             orderby planet.Name ascending
+                             where ((planet.RotationPeriod > 10) && (planet.RotationPeriod < 20))
+                             select planet;    
+                
             //var assignment6 = from planet in planets
             //                  orderby planet.Name ascending
             //                  where planet.RotationPeriod > 10 && planet.RotationPeriod < 20
